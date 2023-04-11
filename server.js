@@ -15,6 +15,6 @@ app.get("/nodemon",function(req, res){
   res.send("<ul><li>Eat</li><li>Work</li><li>Conquer</li><li>Repeat</li></ul>");
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
   console.log("The Server has been started in port 8389");
 });
